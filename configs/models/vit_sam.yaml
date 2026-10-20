@@ -1,0 +1,10 @@
+model:
+  model_name: timm/samvit_base_patch16.sa1b
+  adaptation_mode: "full"
+  lora_r: 16
+  lora_target_modules:
+    - qkv
+    - proj
+    - mlp.fc1
+    - mlp.fc2
+  lora_modules_to_save: null

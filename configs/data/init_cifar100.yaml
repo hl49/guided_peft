@@ -1,0 +1,20 @@
+model:
+  num_classes: 100
+data:
+  dataset_name: clip-benchmark/wds_vtab-cifar100
+  model_name: timm/vit_base_patch16_224.orig_in21k_ft_in1k
+  batch_size: 256
+  eval_batch_size: 8
+  num_workers: 8
+  train_crop_mode: "rkrr"
+  train_scale: null
+  train_ratio: null
+  train_hflip: 0.5
+  train_vflip: 0.5
+  train_color_jitter: 0.4
+  train_color_jitter_prob: 0.5
+  train_grayscale_prob: 0.5
+  train_gaussian_blur_prob: 0.5
+  eval_crop_pct: 1.0
+  eval_crop_mode: "border"
+  eval_crop_border_pixels: null

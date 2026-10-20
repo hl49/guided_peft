@@ -1,0 +1,10 @@
+model:
+  model_name: timm/vit_base_patch16_224.orig_in21k
+  adaptation_mode: "lora"
+  lora_r: 16
+  lora_target_modules:
+    - qkv
+    - proj
+    - mlp.fc1
+    - mlp.fc2
+  lora_modules_to_save: null

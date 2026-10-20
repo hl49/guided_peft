@@ -1,0 +1,12 @@
+model:
+  num_classes: 10
+data:
+  dataset_name: username/vtab_svhn
+  model_name:
+  batch_size: 8
+  eval_batch_size: 8
+  num_workers: 4
+  train_no_aug: true
+  eval_crop_pct: 1.0
+  eval_crop_mode: "squash"
+  eval_crop_border_pixels: null
